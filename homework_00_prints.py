@@ -4,6 +4,7 @@ Created on Mon Oct 12 14:37:42 2020
 
 @author: Meva
 """
+
 import json
 # import libraries and functions
 import numpy as np
@@ -25,7 +26,7 @@ import requests
 
 
 #Escribe aqui tu numero de cuenta. Si tienes dudas consulta el README.md
-numeroDeCuenta = ''
+numeroDeCuenta = '316353348'
 
 
 '''
@@ -58,10 +59,12 @@ def tarea0():
     # median rounded to 4 decimals
     # var_95 rounded to 6 decimals
     # is_normal 
-    
+    a = round(dm.median,4)
+    b = round(dm.var_95,6)
+    c = dm.is_normal
     #If you have any questions, see our video on Youtube
-    return 
-
+    return a,b,c
+   
 
 #NO MODIFICAR
 def settings(numero_cuenta):
